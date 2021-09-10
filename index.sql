@@ -18,6 +18,7 @@ create table users (
     occupation_id integer not null,
     status_private boolean default true,
     photo_url varchar(255) null,
+    link_custom varchar(355) null,
 
     foreign key (occupation_id) references occupations(id),
 
